@@ -21,12 +21,12 @@ Accede al directorio de Kafka:
 cd kafka_2.11-2.2.0
 ```
 
-`inicio ZooKeeper`
+`inicio ZooKeeper` 
 configurar ZooKeeper:
-se recomienda crear una carpeta especifica para configurar dataDir en lugar de /tmp/zookeeper,
-para asegurarte de que los datos de ZooKeeper no se borren automaticamente.
-original: dataDir=/tmp/zookeeper
-editada:  dataDir=/ruta/de/tu/eleccion
+* se recomienda crear una carpeta especifica para configurar dataDir en lugar de /tmp/zookeeper,
+  para asegurarte de que los datos de ZooKeeper no se borren automaticamente.
+  original: dataDir=/tmp/zookeeper
+  editada:  dataDir=/ruta/de/tu/eleccion
 ```
 root@1be86383f47d:~/probando/kafka_2.11-2.2.0/config# cat zookeeper.properties
 ````
