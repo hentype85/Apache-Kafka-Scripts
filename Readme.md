@@ -22,7 +22,7 @@ cd kafka_2.11-2.2.0
 ```
 
 `inicio ZooKeeper` 
-configurar ZooKeeper:
+* configurar ZooKeeper:
 * se recomienda crear una carpeta especifica para configurar dataDir en lugar de /tmp/zookeeper,
   para asegurarte de que los datos de ZooKeeper no se borren automaticamente.
   original: dataDir=/tmp/zookeeper
@@ -36,7 +36,7 @@ root@1be86383f47d:~/probando/kafka_2.11-2.2.0# ./bin/zookeeper-server-start.sh .
 ```
 
 `inicio Kafka`
-configurar Kafka:
+* configurar Kafka:
 * cada nodo kafka (broker) que se vaya a arrancar tiene que tener un id unico
   (broker.id=0 para un nodo , broker.id=1 para otro y asi..)
 * se puede crear otra carpeta de logs
