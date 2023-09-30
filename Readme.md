@@ -21,6 +21,7 @@ Accede al directorio de Kafka:
 cd kafka_2.11-2.2.0
 ```
 
+`inicio ZooKeeper`
 configurar ZooKeeper:
 se recomienda crear una carpeta especifica para configurar dataDir en lugar de /tmp/zookeeper,
 para asegurarte de que los datos de ZooKeeper no se borren automaticamente.
@@ -29,11 +30,12 @@ editada:  dataDir=/ruta/de/tu/eleccion
 ```
 root@1be86383f47d:~/probando/kafka_2.11-2.2.0/config# cat zookeeper.properties
 ````
-`inicio ZooKeeper` (necesita estar funcionando antes de iniciar kafka):
+(ZooKeeper necesita estar funcionando antes de iniciar kafka):
 ```
 root@1be86383f47d:~/probando/kafka_2.11-2.2.0# ./bin/zookeeper-server-start.sh ./config/zookeeper.properties
 ```
 
+`inicio Kafka`
 configurar Kafka:
 * cada nodo kafka (broker) que se vaya a arrancar tiene que tener un id unico
   (broker.id=0 para un nodo , broker.id=1 para otro y asi..)
@@ -45,13 +47,13 @@ configurar Kafka:
   listeners=PLAINTEXT://:9092 por listeners=PLAINTEXT://172.17.0.5:9092 
   (172.17.0.5 es un ejemplo la ip de la propia maquina)
 
-`inicio kafka`:
+ejecutar kafka:
 ```
 root@1be86383f47d:~/probando/kafka_2.11-2.2.0# ./bin/kafka-server-start.sh ./config/server.properties
 ```
 
 
-Para pruebas:
+`pruebas en consola`:
 
 ejecutar el producer en un tab:
 ```
