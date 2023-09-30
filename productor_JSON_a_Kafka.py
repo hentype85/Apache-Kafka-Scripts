@@ -1,4 +1,5 @@
 from confluent_kafka import Producer
+import json
 
 # configuracion del productor Kafka
 config = {
@@ -12,16 +13,16 @@ producer = Producer(config)
 topic = 'mi_topico'  # cambia esto al nombre de tu tema
 
 try:
-    while True:
+    with open('infocasas.json', 'r') as file:
+        data = json.load(file)
 
-        # leer el mensaje desde la entrada estandar
-        mensaje = input("> ")
+    # enviar el diccionario al tema
+    producer.produce(topic, key=None, value=json.dumps(data))
 
-        # envia el mensaje al tema
-        producer.produce(topic, key=None, value=mensaje)
-
-except KeyboardInterrupt:
-    pass
+except FileNotFoundError:
+    print("El archivo JSON no fue encontrado.")
+except Exception as e:
+    print(f"Error: {str(e)}")
 finally:
     # asegura que todos los mensajes pendientes se envien antes de salir
     producer.flush()
