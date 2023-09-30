@@ -45,15 +45,13 @@ configurar Kafka:
   listeners=PLAINTEXT://:9092 por listeners=PLAINTEXT://172.17.0.5:9092 
   (172.17.0.5 es un ejemplo la ip de la propia maquina)
 
-
 `inicio kafka`:
 ```
 root@1be86383f47d:~/probando/kafka_2.11-2.2.0# ./bin/kafka-server-start.sh ./config/server.properties
 ```
 
-####################################
-########### Para pruebas ###########
-####################################
+
+Para pruebas:
 
 ejecutar el producer en un tab:
 ```
