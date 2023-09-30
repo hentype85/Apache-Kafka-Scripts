@@ -2,7 +2,7 @@ from confluent_kafka import Producer
 
 # configuracion del productor Kafka
 config = {
-    'bootstrap.servers': 'localhost:9092',  # Cambia esto a la direccion de tu servidor Kafka
+    'bootstrap.servers': 'localhost:9092',  # cambia esto a la direccion de tu servidor Kafka
 }
 
 # objeto productor Kafka

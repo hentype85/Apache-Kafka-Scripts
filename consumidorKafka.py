@@ -2,9 +2,10 @@ from confluent_kafka import Consumer, KafkaError
 
 # configuracion del consumidor Kafka
 config = {
-    'bootstrap.servers': 'localhost:9092',  # Cambia esto a la dirección de tu servidor Kafka
-    'group.id': 'my-consumer-group',  # Puedes cambiar el nombre del grupo según tus necesidades
-    'auto.offset.reset': 'earliest'  # Esto establece el inicio desde el principio
+    'bootstrap.servers': 'localhost:9092',  # cambia esto a la dirección de tu servidor Kafka
+    'group.id': 'my-consumer-group',  # puedes cambiar el nombre del grupo según tus necesidades
+    # 'auto.offset.reset': 'earliest'  # inicio desde el principio
+    'auto.offset.reset': 'latest' # inicio desde el ultimo mensaje disponible
 }
 
 # objeto consumidor Kafka
