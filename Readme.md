@@ -8,7 +8,6 @@ Descomprime el archivo descargado:
 ```
 tar -xzf kafka_2.11-2.2.0.tgz
 ```
-##########################################################################
 
 Instala Java OpenJDK 11:
 ```
@@ -20,14 +19,10 @@ Instala el JDK (Java Development Kit):
 sudo apt install default-jdk
 ```
 
-##########################################################################
-
 Accede al directorio de Kafka:
 ```
 cd kafka_2.11-2.2.0
 ```
-
-##########################################################################
 
 configurar nodo zookeeper:
 * se puede crear una carpeta distinta para configurar dataDir
@@ -43,8 +38,6 @@ inicio zookeeper:
 ```
 root@1be86383f47d:~/probando/kafka_2.11-2.2.0# ./bin/zookeeper-server-start.sh ./config/zookeeper.properties
 ```
-
-##########################################################################
 
 configurar nodo kafka:
 * cada nodo (broker) que se vaya a arrancar tiene que tener un id unico
@@ -71,8 +64,6 @@ inicio nodo (broker) en kafka:
 root@1be86383f47d:~/probando/kafka_2.11-2.2.0# ./bin/kafka-server-start.sh ./config/server.properties
 
 ```
-
-##########################################################################
 
 probar producer:
 ```
