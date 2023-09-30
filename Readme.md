@@ -27,9 +27,6 @@ cd kafka_2.11-2.2.0
   para asegurarte de que los datos de ZooKeeper no se borren automaticamente.
   original: dataDir=/tmp/zookeeper
   editada:  dataDir=/ruta/de/tu/eleccion
-```
-root@1be86383f47d:~/probando/kafka_2.11-2.2.0/config# cat zookeeper.properties
-````
 (ZooKeeper necesita estar funcionando antes de iniciar kafka):
 ```
 root@1be86383f47d:~/probando/kafka_2.11-2.2.0# ./bin/zookeeper-server-start.sh ./config/zookeeper.properties
