@@ -1,5 +1,6 @@
+# Apache Kafka en Ubuntu
 
-Descargar Apache Kafka y descomprimir:
+Descargar Apache Kafka y descomprime:
 ```
 wget https://archive.apache.org/dist/kafka/2.2.0/kafka_2.11-2.2.0.tgz
 tar -xzf kafka_2.11-2.2.0.tgz
@@ -20,6 +21,7 @@ Accede al directorio de Kafka:
 ```
 cd kafka_2.11-2.2.0
 ```
+
 
 `inicio ZooKeeper` 
 * configurar ZooKeeper:
