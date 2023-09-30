@@ -23,11 +23,13 @@ cd kafka_2.11-2.2.0
 
 `inicio ZooKeeper` 
 * configurar ZooKeeper:
+* ZooKeeper necesita estar funcionando antes de iniciar kafka
 * se recomienda crear una carpeta especifica para configurar dataDir en lugar de /tmp/zookeeper,
   para asegurarte de que los datos de ZooKeeper no se borren automaticamente.
   original: dataDir=/tmp/zookeeper
   editada:  dataDir=/ruta/de/tu/eleccion
-(ZooKeeper necesita estar funcionando antes de iniciar kafka):
+
+ejecutar ZooKeeper:
 ```
 root@1be86383f47d:~/probando/kafka_2.11-2.2.0# ./bin/zookeeper-server-start.sh ./config/zookeeper.properties
 ```
