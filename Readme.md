@@ -1,12 +1,12 @@
 # Apache Kafka en Ubuntu
 
-Descargar Apache Kafka y descomprime:
+Descargar Apache Kafka y descomprimir:
 ```
 wget https://archive.apache.org/dist/kafka/2.2.0/kafka_2.11-2.2.0.tgz
 tar -xzf kafka_2.11-2.2.0.tgz
 ```
 
-Instala Java OpenJDK 11 y JDK (Java Development Kit):
+Instalar Java OpenJDK 11 y JDK (Java Development Kit):
 ```
 sudo apt install openjdk-11-jre-headless
 sudo apt install default-jdk
@@ -17,7 +17,7 @@ Instalar confluent-kafka para Python3
 pip install confluent-kafka
 ```
 
-Accede al directorio de Kafka:
+Acceder al directorio de Kafka:
 ```
 cd kafka_2.11-2.2.0
 ```
